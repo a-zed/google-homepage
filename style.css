@@ -1,0 +1,155 @@
+/* =============================================================================================
+STYLE RESETS
+================================================================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ==============================================================================================
+GENERAL STYLES
+================================================================================================= */
+
+/* --------------------------------------------
+Layout
+----------------------------------------------- */
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+/* --------------------------------------------
+Fonts
+----------------------------------------------- */
+body {
+  font-family: arial, sans-serif;
+  color: #3c4043;
+}
+
+p,
+button,
+input,
+a {
+  font-family: arial, sans-serif;
+  color: #3c4043;
+  line-height: 27px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------
+Buttons
+----------------------------------------------- */
+
+button {
+  padding: 0 16px;
+  margin: 11px 4px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #f8f9fa;
+  height: 36px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid #dadce0;
+}
+
+/* --------------------------------------------
+Forms
+----------------------------------------------- */
+
+#search-query-field {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
+}
+
+#header-left-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#header-right-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#main-google-search-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-top {
+  border-bottom: 1px solid #dadce0;
+  padding: 15px;
+}
+
+#footer-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#footer-bottom-left {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#footer-bottom-center {
+  display: flex;
+  align-items: center;
+}
+
+#footer-bottom-right {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}

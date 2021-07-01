@@ -6,36 +6,42 @@
     <title>Fake Google</title>
     <link rel="icon" href="favicon.png?v=3" type="image/x-icon" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3" />
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet" /> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="nav" id="left-nav">
+      <div class="nav" id="header-left-nav">
         <a href="#">About</a>
         <a href="#">Store</a>
       </div>
-      <div class="nav" id="right-nav">
+      <div class="nav" id="header-right-nav">
         <a href="#">Gmail</a>
         <a href="#">Images</a>
         <span class="material-icons">apps</span>
         <button class="sign-in">Sign In</button>
       </div>
     </header>
-    <div id="main-google-search-area">
-      <div id="google-logo">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+    <main>
+      <div id="main-google-search-area">
+        <div id="google-logo">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+        </div>
+        <div class="search-area">
+          <form>
+            <div id="search-query-container">
+              <input type="text" id="search-query-field" />
+            </div>
+            <div id="search-buttons">
+              <button>Google Search</button>
+              <button>I'm Feeling Lucky</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="search-box">
-        <form>
-          <input type="text" />
-          <button>Google Search</button>
-          <button>I'm Feeling Lucky</button>
-        </form>
-      </div>
-    </div>
+    </main>
     <footer>
       <div id="footer-top">
         <p>United Kingdom</p>
