@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#1591ac" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fake Google</title>
     <link rel="icon" href="favicon.png?v=3" type="image/x-icon" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3" />
@@ -12,27 +13,33 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="nav" id="header-left-nav">
-        <a href="#">About</a>
-        <a href="#">Store</a>
-      </div>
-      <div class="nav" id="header-right-nav">
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <span class="material-icons">apps</span>
-        <button class="sign-in">Sign In</button>
-      </div>
-    </header>
-    <main>
-      <div id="main-google-search-area">
+    <div class="page-container">
+      <header>
+        <div class="nav" id="header-left-nav">
+          <a href="#">About</a>
+          <a href="#">Store</a>
+        </div>
+        <div class="nav" id="header-right-nav">
+          <a href="#">Gmail</a>
+          <a href="#">Images</a>
+          <a href="#" class="non-text-link">
+            <div id="app-icon">
+              <span class="material-icons">apps</span>
+            </div></a
+          >
+          <button class="sign-in-button">Sign In</button>
+        </div>
+      </header>
+      <main>
         <div id="google-logo">
           <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
         </div>
-        <div class="search-area">
+        <div class="search-form">
           <form>
             <div id="search-query-container">
+              <span class="material-icons">search</span>
               <input type="text" id="search-query-field" />
+              <span class="material-icons">mic</span>
             </div>
             <div id="search-buttons">
               <button>Google Search</button>
@@ -40,28 +47,34 @@
             </div>
           </form>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div id="footer-top">
-        <p>United Kingdom</p>
-      </div>
-      <div id="footer-bottom">
-        <div id="footer-bottom-left">
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-          <a href="#">How Search Works</a>
+        <div class="buffer"></div>
+      </main>
+      <footer>
+        <div id="footer-top">
+          <p class="footer-text">United Kingdom</p>
         </div>
-        <div id="footer-bottom-centre">
-          <a href="#">Carbon neutral since 2007</a>
+        <div id="footer-bottom">
+          <div id="footer-bottom-left">
+            <a class="footer-links" href="#">Advertising</a>
+            <a class="footer-links" href="#">Business</a>
+            <a class="footer-links" href="#">How Search Works</a>
+          </div>
+          <div id="footer-bottom-center">
+            <div id="carbon-neutral-icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
+              />
+            </div>
+            <a class="footer-links" href="#">Carbon neutral since 2007</a>
+          </div>
+          <div id="footer-bottom-right">
+            <a class="footer-links" href="#">Privacy</a>
+            <a class="footer-links" href="#">Terms</a>
+            <a class="footer-links" href="#">Settings</a>
+          </div>
         </div>
-        <div id="footer-bottom-right">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
 
