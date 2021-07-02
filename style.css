@@ -171,8 +171,8 @@ main {
 }
 
 #google-logo {
-  width: 275px;
-  padding: 50px 20px 0 20px;
+  width: 312px;
+  padding: 80px 20px 0 20px;
 }
 
 img {
@@ -224,6 +224,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 /* --------------------------------------------
